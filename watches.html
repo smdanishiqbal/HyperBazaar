@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HyperBazaar</title>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="engine1/style.css"/>
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        #wowslider-container1 {
+            margin-top: 30px;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/lightbox.js"></script>
+    <!--owl slider   -->
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        $(document).ready(function () {
+            $("#owl-example").owlCarousel({
+                autoPlay: true
+            });
+        })</script>
+</head>
+
+<body ng-app="myapp">
+
+<header >
+
+    <div class="text-right custom-header">
+        <div class=" btn-group">
+            <a href="" data-toggle="dropdown" class="dropdown-toggle"><i class="glyphicon glyphicon-user"></i> My Account <span class="caret"></span></a>
+            <ul class="dropdown-menu noclose">
+                <li><a href="login.html">My Account</a></li>
+                <li><a href="">My Wishlist</a></li>
+                <li><a href="">My Cart</a></li></ul>
+        </div>
+        <div class="btn-group">
+            <a href="" data-toggle="dropdown" class="dropdown-toggle">Language <span class="caret"></span></a>
+            <ul class="dropdown-menu noclose">
+                <li><a href="">English</a></li>
+                <li><a href="">Urdu</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+<nav class="navbar navbar-default shadow ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+                <a class="navbar-brand" href="#"><img src="gliphicon2.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right ">
+                <li><a HREF="index.html">HOME</a></li>
+                <li><a href="Women.html">WOMEN</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="footwear.html">FOOTWEAR</a></li>
+                <li><a href="jewellery.html">JEWELLERY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="cart.html" >MY CART</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="top-banner" >
+    <img src="images/me-watches.jpg"  alt="">
+
+
+
+</div>
+<div class="container-fluid">
+    <div class="col-md-12 product-info">
+        <ul id="myTab" class="nav nav-tabs ">
+
+            <li class="active"><a href="#service-one" data-toggle="tab">Watches</a></li>
+
+
+
+
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <br>
+            <div class="tab-pane fade in active" id="service-one">
+
+                <section class="product-info">
+
+                    <div class="container-fluid product-items">
+
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"   class="thumbnail">
+                                        <img src="images/watches/men/24.tissot-t-classic-tradition-silver-dial-men_s-watch-t0636101603700.jpg">
+                                        <div class="caption "><p>New Watch Style</p>
+                                        </div>
+                                        <b class="tag">Rs:11500</b>
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>New Watch Style</h2>
+                                        <a class="info" href="watch1.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  class="thumbnail" >
+                                        <img src="images/watches/men/23.tissot-t-classic-tradition-chronograph-men_s-watch-t0636171603700.jpg">
+                                        <div class="caption "><p>tissot watch</p>
+                                        </div>
+                                        <b class="tag">Rs:7500</b>
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>tissot watch</h2>
+                                        <a class="info" href="watch2.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/4.citizen-eco-drive-chronograph-men_s-strap-watch-at0200-05e_1%20-%20Copy%20(2).jpg">
+                                        <div class="caption "><p>Citizen Watch</p>
+                                        </div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Citizen Watch</h2>
+                                        <a class="info" href="watch3.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/5.citizen-eco-drive-perpetual-calendar-chronograph-mens-watch-bl5250-02l%20-%20Copy%20(2).jpg">
+                                        <div class="caption "><p>citizen-eco-drive</p>
+                                        </div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>citizen-eco-drive</h2>
+                                        <a class="info" href="watch4.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/6.citizen-world-time-at-chronograph-perpetual-automatic-mens-watch-at907158e%20-%20Copy.jpg">
+                                        <div class="caption "><p>Citizen Chronograph</p>
+                                        </div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Citizen Chronograph</h2>
+                                        <a class="info" href="watch5.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/7.citizen-world-time-a-t-perpetual-mens-watch-at9071-07e%20-%20Copy%20(3).jpg">
+                                        <div class="caption "><p>citizen-world-time</p>
+                                        </div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>citizen-world-time</h2>
+                                        <a class="info" href="watch6.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/8.daniel-wellington-classic-st-mawes-white-dial-men_s-watch-0207dw%20-%20Copy%20(2).jpg">
+                                        <div class="caption"><p>daniel-wellington-classic </p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>daniel-wellington-classic</h2>
+                                        <a class="info" href="watch7.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/9.fossil-nate-chronograph-black-dial-black-ion-plated-men_s-watch-jr1354_1%20-%20Copy%20(2).jpg">
+                                        <div class="caption"><p>fossil-nate-chronograph</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>fossil-nate-chronograph</h2>
+                                        <a class="info" href="watch8.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/10.frederique-constant-slimline-silver-dial-men_s-watch-fc-220s5s6%20-%20Copy%20(2).jpg">
+                                        <div class="caption"><p>frederique-constant</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>frederique-constant</h2>
+                                        <a class="info" href="watch9.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/11.invicta-mako-pro-diver-automatic-men_s-watch-8926%20-%20Copy%20(2).jpg">
+                                        <div class="caption"><p>invicta-mako-pro-diver</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>invicta-mako-pro-diver</h2>
+                                        <a class="info" href="watch10.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/12.iwc-portuguese-chronograph-automatic-white-dial-men_s-watch-iw371446_6%20-%20Copy%20(2).jpg">
+                                        <div class="caption"><p>iwc-portuguese-chronograph</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>iwc-portuguese-chronograph</h2>
+                                        <a class="info" href="watch11.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/13movado-circa-chronograph-white-dial-men_s-watch-0606575_7%20-%20Copy%20(2).jpg">
+                                        <div class="caption"><p>movado-circa-chronograph </p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>movado-circa-chronograph</h2>
+                                        <a class="info" href="watch12.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/14.movado-museum-black-dial-black-leather-strap-men_s-watch-2100002_5%20-%20Copy%20(2).jpg">
+                                        <div class="caption"><p>movado-museum-black-dial </p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>movado-museum-black-dial</h2>
+                                        <a class="info" href="watch13.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/15.omega-aqua-terra-automatic-blue-dial-watch-3110422103003-23110422103003%20-%20Copy%20(2).jpg">
+                                        <div class="caption"><p>omega-aqua-terra</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>omega-aqua-terra</h2>
+                                        <a class="info" href="watch14.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/16.oris-divers-sixty-five-automatic-men_s-watch-733-7707-4064brfs%20-%20Copy%20(2).jpg">
+                                        <div class="caption"><p>ooris-divers-sixty</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>ooris-divers-sixty</h2>
+                                        <a class="info" href="watch15.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/17.seiko-chronograph-beige-dial-brown-leather-men_s-watch-sndc31_1%20-%20Copy%20(2).jpg">
+                                        <div class="caption"><p>seiko-chronograph-beige</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>seiko-chronograph-beige</h2>
+                                        <a class="info" href="watch16.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/18.seiko-recraft-automatic-blue-dial-brown-leather-men_s-watch-snkn37_1.jpg">
+                                        <div class="caption"><p>seiko-recraft-automatic</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>seiko-recraft-automatic</h2>
+                                        <a class="info" href="watch17.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/20.tissot-le-locle-automatic-ivory-dial-men_s-watch-t41.5.413.73_9.jpg">
+                                        <div class="caption"><p>tissot-le-locle-automatic</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>tissot-le-locle-automatic</h2>
+                                        <a class="info" href="watch18.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+        <hr>
+    </div>
+</div>
+<!--footer start from here-->
+<div id="newsletter-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 clearfix">
+                <h3>Sign up to receive the latest news</h3>
+                <form id="register-newsletter">
+                    <input type="text" name="newsletter" required="" placeholder="Enter your email address">
+                    <input id="warn-me" type="submit" class="btn btn-custom-3" value="SIGN UP">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#warn-me').on('click', function () {
+        $.alert('You have Successfully Sign up for Latest News', {
+            // Options
+            type: 'success'
+        });
+    });
+
+</script>
+<script src="js/alert.js"></script>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footerleft ">
+                <div class="logofooter"> HyperBazaar</div>
+                <p>HyperBazaar is a departmental store selling cosmetics, ladies fabrics,
+                    artificial jewellery, shoes, ladies bags, watches,men shirt,t.shirt,jeans,coat,kids clothes
+                    and more at wholesale rates in a comfortable retail environment.</p>
+                <p><i class="fa fa-map-pin"></i> 210,Karachi Pakistan</p>
+                <p><i class="fa fa-phone"></i> Phone (Pakistan) : +92 9999 878 398</p>
+                <p><i class="fa fa-envelope"></i> E-mail : info@HyperBazaar.com</p>
+
+            </div>
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">GENERAL LINKS</h6>
+                <ul class="footer-ul">
+                    <li><a href="aboutus.html"> About us</a></li>
+                    <li><a href="privacy.html"> Privacy Policy</a></li>
+                    <li><a href="term&conditions.html"> Terms & Conditions</a></li>
+                    <li><a href="advanced%20search.html"> Catalog Advanced Search</a></li>
+                    <li><a href="login.html"> Login</a></li>
+                    <li><a href="login.html"> My Account</a></li>
+                    <li><a href="contact%20us.html"> Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">LATEST POST</h6>
+                <div class="post">
+                    <p>Black Friday Sale <span>September 25,2016</span></p>
+                    <p>Winter Sale<span>December 1,2016</span></p>
+                    <p>Clearance Sale<span>August 3,2016</span></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <div><a href=""><img  src="images/facebook.png" alt=""></a>
+                    <a href=""> <img src="images/g.png" alt=""></a>
+                    <a href=""> <img src="images/twitter-logo-button.png" alt=""></a>
+                    <a href=""><img src="footor%20logo.png"   alt=""></a></div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright ">
+    <div class="container">
+        <div class="col-md-6">
+            <p>© 2016 - All Rights with HyperBazaar</p>
+        </div>
+        <div class="col-md-6">
+            <ul class="bottom_ul">
+                <li><a href="index.html">HyperBazaar.com</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="contact%20us.html">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

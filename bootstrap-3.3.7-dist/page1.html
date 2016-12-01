@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  #footer {
+      background-color:#333333;
+      color: white;
+      padding: 15px;
+    }
+  .container-fluid {
+  
+	  background-color:#4d4d4d;
+  }
+  .navbar {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;  
+  }
+    
+	
+  #box {
+  text-align:center;
+    width: 200px;
+    height: 60px;
+    background: #333333;
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s;
+	
+}
+
+denav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#button{ float:right;
+background-color:black;
+
+}
+
+
+
+  
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Welcome to our store.</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Currency:USD</a></li>
+        <li><a href="#">Language:English</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   
+    <nav class="navbar navbar-default">
+  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Messages</a></li>
+		<li><a href="#">Messages</a></li>
+		<li><a href="#">Messages</a></li>
+		<li><a href="#">Messages</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+  
+    <div class="container">
+	<h4>CONTACT INFORMATION</h4>
+    <div class="row">
+    <div class="col-md-12">
+	
+	<form id="contact-form" method="post"  role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+  <label for="form_name"><h5>Name*</h5></label>
+    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your NAME " required="required" data-error="Firstname is required.">
+  <div class="help-block with-errors"></div>
+  </div>
+   </div>
+   <div class="col-md-6">
+   <div class="form-group">
+   <label for="form_Email"><h5>Email*</h5></label>
+   <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your EMAIL " required="required" data-error="Lastname is required.">
+   <div class="help-block with-errors"></div>
+   </div>
+   </div>
+   </div>
+   <div class="row">
+   <div class="col-md-6">
+    <div class="form-group">
+   <label for="form_TELEPHONE"><h5>TELEPHONE*</h5></label>
+    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your TELEPHONE" required="required" data-error="Valid email is required.">
+    <div class="help-block with-errors"></div>
+    </div>
+   </div>
+   <div class="col-md-6">
+    <div class="form-group">
+    <label for="form_phone"><h5>Phone*</h5></label>
+    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+    <div class="help-block with-errors"></div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="form-group">
+    <label for="form_message"><h5>COMMENT *</h5></label>
+    <textarea id="form_message" name="message" class="form-control" placeholder="" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+    <div class="help-block with-errors"></div>
+    </div>
+    </div>
+	
+    <div class="col-md-12">
+	<div id="button">
+    <input type="submit" class="btn btn-secondary btn-send" value="SUBMIT">
+    </div>
+	</div>
+    </div>
+    <div class="row">
+    <div class="col-md-12">
+    </div>
+    </div>
+    </div>
+	</form> 
+	</div>
+    </div>
+     </div>
+	 <br/><br/>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center>
+  <div class="row">
+    <div class="col-md-3" style="color:white;">
+	<br/>
+      <h4>ABOUT US </h4>
+	 <h6><img src="loc.png" alt="line" width="15" height="15">&nbsp &nbsp 8901 Marmora 
+	 Road,lasgow D04 89 GR, New York</h6>
+	 <br/>
+	 <h6> <img src="ph.png" alt="line" width="15" height="15">&nbsp &nbsp &nbsp &nbsp 8901 Marmora Road, Glasgow D04 89 GR, New York</h6>
+	 <br/>
+	 <h6><img src="em.png" alt="line" width="15" height="15">&nbsp &nbsp 8901 Marmora Road, Glasgow D04 89 GR, New York</h6></div>
+    </br>
+	<div class="col-md-3" style="color:white;">
+      <h4>INFORMATION</h4>
+	   <h5><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>ABOUT</a></h5>
+	    <h5><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Delivery Information</a></h5>
+		 <h5><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Privacy Policy</a></h5>
+		  <h5><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Custom Service</a></h5>
+		   <h5><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Terms & Condition</a></h5>
+		   <br/><br/><br/>
+	  
+    </div>
+	
+<div class="col-md-3" style="color:white;">
+      <h4>POPULAR POST</h4>
+	  <a href="#"><h6><img src="wa.png" alt="line" width="50" height="50">Watch</h6></a>
+	  <a href="#"><h6><img src="mo.png" alt="line" width="50" height="50">mobile</h6></a>
+    </div>
+<div class="col-md-3" style="color:white;">
+       <h4>EXTRAS</h4>
+	   <div id="box"><h5><img src="ph.png" alt="line" width="15" height="15">FREE SHIPPING</h5>
+	   <h6>On Order Over $100</h6></div><br/>
+		<div id="box">
+		<h5></h5><h5>ORDER ONLINECall</h5>
+	   <h6>Us: (801) 2345 - 6789</h6></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer id="footer">
+
+  <h5>Copyright © 2014 Plazathemes. All Rights Reserved</h5>
+  <h1><img src="card1.png" alt="line" width="50" height="50"  style=float:right>
+  <img src="card2.png" alt="line" width="50" height="50">
+  <img src="card4.png" alt="line" width="50" height="50"></h1>
+</footer>
+</body>
+</html>

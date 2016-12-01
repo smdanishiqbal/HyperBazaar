@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HyperBazaar</title>
+    <link rel="icon" href="favicon.png">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="engine1/style.css"/>
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        #wowslider-container1 {
+            margin-top: 30px;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/lightbox.js"></script>
+    <!--owl slider   -->
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .container-fluid .thumbnail{
+            height: 80px;
+            padding: 0;
+            margin-right: 10px;
+
+        }
+    </style>
+
+</head>
+<body ng-controller="mycnt">
+
+
+
+<header >
+
+    <div class="text-right custom-header">
+        <div class=" btn-group">
+            <a href="" data-toggle="dropdown" class="dropdown-toggle"><i class="glyphicon glyphicon-user"></i> My Account <span class="caret"></span></a>
+            <ul class="dropdown-menu noclose">
+                <li><a href="login.html">My Account</a></li>
+                <li><a href="">My Wishlist</a></li>
+                <li><a href="">My Cart</a></li></ul>
+        </div>
+        <div class="btn-group">
+            <a href="" data-toggle="dropdown" class="dropdown-toggle">Language <span class="caret"></span></a>
+            <ul class="dropdown-menu noclose">
+                <li><a href="">English</a></li>
+                <li><a href="">Urdu</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="text-align: center">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <img src="logo.png" width="200" height="150" alt="">
+                <hr>
+                <h4 class="modal-title">Select You City</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="row" style="text-align: center;">
+                    <a data-dismiss="modal">
+                        <div class="col-md-3"><img src="images/karachi.jpg" width="120" height="120" alt="">
+                            <div class="caption">KARACHI</div>
+                        </div>
+                    </a>
+                    <a data-dismiss="modal">
+                        <div class="col-md-3"><img src="images/islamabad.jpg"  width="120" height="120" alt="">
+                            <div class="caption">ISLAMABAD</div></div></a>
+                    <a data-dismiss="modal">
+                        <div class="col-md-3"><img src="images/lahore.jpg" width="120" height="120" alt="">
+                            <div class="caption">LAHORE</div></div></a>
+                    <a data-dismiss="modal">
+                        <div class="col-md-3"><img src="images/peshawar.jpg" width="120" height="120" alt="">
+                            <div class="caption">PESHAWAR</div></div></a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<nav class="navbar navbar-default shadow ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+                <a class="navbar-brand" href="#"><img src="gliphicon2.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right ">
+                <li><a HREF="index.html">HOME</a></li>
+                <li><a href="Women.html">WOMEN</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="footwear.html">FOOTWEAR</a></li>
+                <li><a href="jewellery.html">JEWELLERY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="cart.html" >MY CART</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+        <!--<div class="navbar-fixed-top navbar-inverse" >-->
+        <!--<div class="col-md-4"><img src="logo.gif" alt="lgo" height="50px" class="img-rounded"></div>-->
+        <!--<ul class="nav navbar-nav navbar-right" >-->
+        <!--<li><a ui-sref="sale">HOME</a></li>-->
+        <!--<li><a ui-sref="women">WOMEN</a></li>-->
+        <!--<li><a href="#">MEN</a></li>-->
+        <!--<li><a href="#">FOOTWEAR</a></li>-->
+        <!--<li><a href="#">MOBILES</a></li>-->
+        <!--<li><a href="#">JEWELLERY</a></li>-->
+        <!--<li><a ui-sref="about">ABOUT US</a></li>-->
+        <!--<li><a href="#">MY CART</a></li>-->
+
+        <!--</ul>-->
+        <!--</div>-->
+
+<div class="top-banner" >
+    <img src="images/Cart-banner.jpg" alt="">
+
+
+
+</div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                        <th> </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="col-sm-8 col-md-6">
+                            <div class="media">
+                                <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="#">Nike Shoes</a></h4>
+                                    <h5 class="media-heading"> by <a href="#">Nike</a></h5>
+                                    <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                                </div>
+                            </div></td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                            <input type="email" class="form-control" id="exampleInputEmail1" value="1">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>Rs :2500</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>Rs :2500</strong></td>
+                        <td class="col-sm-1 col-md-1">
+                            <button type="button" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span> Remove
+                            </button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-6">
+                            <div class="media">
+                                <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="#">Shinzo TShirt</a></h4>
+                                    <h5 class="media-heading"> by <a href="#">Shinzo</a></h5>
+                                    <span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
+                                </div>
+                            </div></td>
+                        <td class="col-md-1" style="text-align: center">
+                            <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                        </td>
+                        <td class="col-md-1 text-center"><strong>Rs :1200</strong></td>
+                        <td class="col-md-1 text-center"><strong>Rs :1200</strong></td>
+                        <td class="col-md-1">
+                            <button type="button" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span> Remove
+                            </button></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Subtotal</h5></td>
+                        <td class="text-right"><h5><strong>Rs : 3700</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Estimated shipping</h5></td>
+                        <td class="text-right"><h5><strong>Rs : 500</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h3>Total</h3></td>
+                        <td class="text-right"><h3><strong>Rs : 4200</strong></h3></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>
+                            <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                            </button></td>
+                        <td>
+                            <button type="button" class="btn btn-success">
+                                Checkout <span class="glyphicon glyphicon-play"></span>
+                            </button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--footer start from here-->
+<div id="newsletter-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 clearfix">
+                <h3>Sign up to receive the latest news</h3>
+                <form id="register-newsletter">
+                    <input type="email" id="inputEmail" name="newsletter" required="" placeholder="Enter your email address">
+                    <input  type="submit" onclick="abc()"  class="btn btn-custom-3" value="SIGN UP">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/alert.js"></script>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footerleft ">
+                <div class="logofooter"> HyperBazaar</div>
+                <p>HyperBazaar is a departmental store selling cosmetics, ladies fabrics,
+                    artificial jewellery, shoes, ladies bags, watches,men shirt,t.shirt,jeans,coat,kids clothes
+                    and more at wholesale rates in a comfortable retail environment.</p>
+                <p><i class="fa fa-map-pin"></i> 210,Karachi Pakistan</p>
+                <p><i class="fa fa-phone"></i> Phone (Pakistan) : +92 9999 878 398</p>
+                <p><i class="fa fa-envelope"></i> E-mail : info@HyperBazaar.com</p>
+
+            </div>
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">GENERAL LINKS</h6>
+                <ul class="footer-ul">
+                    <li><a href="aboutus.html"> About us</a></li>
+                    <li><a href="privacy.html"> Privacy Policy</a></li>
+                    <li><a href="term&conditions.html"> Terms & Conditions</a></li>
+                    <li><a href="advanced%20search.html"> Catalog Advanced Search</a></li>
+                    <li><a href="login.html"> Login</a></li>
+                    <li><a href="login.html"> My Account</a></li>
+                    <li><a href="contact%20us.html"> Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">LATEST POST</h6>
+                <div class="post">
+                    <p>Black Friday Sale <span>September 25,2016</span></p>
+                    <p>Winter Sale<span>December 1,2016</span></p>
+                    <p>Clearance Sale<span>August 3,2016</span></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <div><a href=""><img  src="images/facebook.png" alt=""></a>
+                    <a href=""> <img src="images/g.png" alt=""></a>
+                    <a href=""> <img src="images/twitter-logo-button.png" alt=""></a>
+                    <a href=""><img src="footor%20logo.png"   alt=""></a></div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright ">
+    <div class="container">
+        <div class="col-md-6">
+            <p>© 2016 - All Rights with HyperBazaar</p>
+        </div>
+        <div class="col-md-6">
+            <ul class="bottom_ul">
+                <li><a href="index.html">HyperBazaar.com</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="contact%20us.html">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

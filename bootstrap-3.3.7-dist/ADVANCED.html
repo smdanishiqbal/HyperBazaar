@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  #footer {
+      background-color:#333333;
+      color: white;
+      padding: 15px;
+    }
+  .container-fluid {
+  
+	  background-color:#4d4d4d;
+  }
+  .navbar {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      
+  }
+   
+  #box {
+  text-align:center;
+    width: 200px;
+    height: 60px;
+    background: #333333;
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s;
+	
+}
+
+
+
+
+
+  
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Welcome to our store.</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Currency:USD</a></li>
+        <li><a href="#">Language:English</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   
+    <nav class="navbar navbar-default">
+  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Messages</a></li>
+		<li><a href="#">Messages</a></li>
+		<li><a href="#">Messages</a></li>
+		<li><a href="#">Messages</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+
+	<h4>PRIVACY POLICY</h4>
+	
+	<p>Please replace this text with you Privacy Policy. 
+	Please add any additional cookies your website uses below (e.g., Google Analytics)</p>
+	<p>This privacy policy sets out how uses and protects any information that you give
+	when you use this website. is committed to ensuring that your privacy is protected. 
+	Should we ask you to provide certain information by which you can be identified when using 
+	this website, then you can be assured that it will only be used in accordance
+	with this privacy statement. may change this policy from time to time by updating this page.
+	You should check this page from time to time to ensure that you are happy with any changes.</p>
+	
+	<h3>What we collect</h3>
+	
+	<p>We may collect the following information: <br/> <br/> name <br/>contact information including email address
+	<br/>demographic information such as postcode, preferences and interests
+	<br/>
+	other information relevant to customer surveys and/or offers<br/>
+	For the exhaustive list of cookies we collect see the List of cookies we collect section.<br/></p>
+	
+	<h3>What we do with the information we gather</h3>
+	
+	<p>We require this information to understand your needs and provide
+	you with a better service, and in particular for the following reasons:</p>
+	<p>Internal record keeping.</p><br/>
+	<p>We may periodically send promotional emails about new products,
+	special offers or other information which we think you may find interesting 
+	using the email address which you have provided.
+	<br/> From time to time, we may also use your information to contact you for market research purposes. 
+	We may contact you by email, phone, fax or mail. We may use the 
+	information to customise the website according to your interests.<br/></p>
+	<h3>Security</h3>
+	<p>We are committed to ensuring that your information is secure. In order to prevent
+	unauthorised access or disclosure, we have put in place suitable physical, 
+	electronic and managerial procedures to safeguard and secure the information we collect online.</p>
+	<h3>How we use cookies</h3>
+	<p>A cookie is a small file which asks permission to be placed on your computer's hard drive. 
+	Once you agree, the file is added and the cookie helps analyse web traffic or
+	lets you know when you visit a particular site. Cookies allow web applications 
+	to respond to you as an individual. The web application can tailor its operations to your needs,
+	likes and dislikes by gathering and remembering information about your preferences.</p>
+	<p>We use traffic log cookies to identify which pages are being used. 
+	This helps us analyse data about web page traffic and improve our website 
+	in order to tailor it to customer needs. We only use 
+	this information for statistical analysis purposes and then the data is removed from the system.</p>
+	<h3>Links to other websites</h3>
+	<p>Our website may contain links to other websites of interest.
+	However, once you have used these links to leave our site,
+	you should note that we do not have any control over that other website.
+	Therefore, we cannot be responsible for the protection and privacy of any information
+	which you provide whilst visiting such sites and such sites are not governed by this privacy statement.
+	You should exercise caution and look at the privacy statement applicable to the website in question.</p>
+	<h3>Controlling your personal information</h3>
+	<p>You may choose to restrict the collection or use of your personal information in the following ways:</p>
+	<p>whenever you are asked to fill in a form on the website,
+	look for the box that you can click to indicate that 
+	you do not want the information to be used by anybody for direct marketing purposes</p>
+	<p>if you have previously agreed to us using your personal information for direct marketing purposes, 
+	you may change your mind at any time by writing to or emailing us at owner@example.com</p>
+	<p>You may request details of personal information which we hold about
+	you under the Data Protection Act 1998. A small fee will be payable.
+	If you would like a copy of the information held on you please write to .</p>
+	<p>If you believe that any information we are holding on you is incorrect or incomplete,
+	please write to or email us as soon as possible, at the above address. 
+	We will promptly correct any information found to be incorrect.</p>
+	<h3>List of cookies we collect</h3>
+	<p>The table below lists the cookies we collect and what information they store</p>
+	<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>COOKIE Name</th>
+        <th>COOKIE Description</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>CATEGORY_INFO</td>
+        <td>Stores the category info on the page, that allows to display pages more quickly.</td>
+     
+      </tr>
+      <tr>
+        <td>COMPARE</td>
+        <td>The items that you have in the Compare Products list.</td>
+       
+      </tr>
+      <tr>
+        <td>CURRENCY</td>
+        <td>Your preferred currency</td>
+      
+      </tr>
+	  <tr>
+        <td>CUSTOMER</td>
+        <td>An encrypted version of your customer id with the store.</td>
+      
+      </tr>
+	  <tr>
+        <td>CUSTOMER_AUTH</td>
+        <td>An indicator if you are currently logged into the store.</td>
+      
+      </tr>
+	  <tr>
+        <td>CUSTOMER_INFO</td>
+        <td>An encrypted version of the customer group you belong to.</td>
+      
+      </tr>
+	  <tr>
+        <td>CUSTOMER_SEGMENT_IDS</td>
+        <td>Stores the Customer Segment ID</td>
+      
+      </tr>
+	  <tr>
+        <td>EXTERNAL_NO_CACHE</td>
+        <td>A flag, which indicates whether caching is disabled or not.</td>
+      
+      </tr>
+	  <tr>
+        <td>FRONTEND</td>
+        <td>You sesssion ID on the server.</td>
+      
+      </tr>
+	  <tr>
+        <td>GUEST-VIEW</td>
+        <td>Allows guests to edit their orders.</td>
+      
+      </tr>
+	  <tr>
+        <td>LAST_CATEGORY</td>
+        <td>The last category you visited.</td>
+      
+      </tr>
+	  <tr>
+        <td>LAST_PRODUCT</td>
+        <td>The most recent product you have viewed.</td>
+      
+      </tr>
+	  <tr>
+        <td>NEWMESSAGE</td>
+        <td>Indicates whether a new message has been received.</td>
+      
+      </tr>
+	  <tr>
+        <td>NO_CACHE</td>
+        <td>Indicates whether it is allowed to use cache.</td>
+      
+      </tr>
+    </tbody>
+  </table>
+	</div>
+	</div>
+	</div>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center>
+  <div class="row">
+    <div class="col-md-3" style="color:white;">
+	<br/>
+      <h4>ABOUT US </h4>
+	 <h6><img src="loc.png" alt="line" width="15" height="15">&nbsp &nbsp 8901 Marmora 
+	 Road,lasgow D04 89 GR, New York</h6>
+	 <br/>
+	 <h6> <img src="ph.png" alt="line" width="15" height="15">&nbsp &nbsp &nbsp &nbsp 8901 Marmora Road, Glasgow D04 89 GR, New York</h6>
+	 <br/>
+	 <h6><img src="em.png" alt="line" width="15" height="15">&nbsp &nbsp 8901 Marmora Road, Glasgow D04 89 GR, New York</h6></div>
+    </br>
+	<div class="col-md-3" style="color:white;">
+      <h4>INFORMATION</h4>
+	   <h5><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>ABOUT</a></h5>
+	    <h5><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Delivery Information</a></h5>
+		 <h5><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Privacy Policy</a></h5>
+		  <h5><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Custom Service</a></h5>
+		   <h5><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Terms & Condition</a></h5>
+		   <br/><br/><br/>
+	  
+    </div>
+	
+<div class="col-md-3" style="color:white;">
+      <h4>POPULAR POST</h4>
+	  <a href="#"><h6><img src="wa.png" alt="line" width="50" height="50">Watch</h6></a>
+	  <a href="#"><h6><img src="mo.png" alt="line" width="50" height="50">mobile</h6></a>
+    </div>
+<div class="col-md-3" style="color:white;">
+       <h4>EXTRAS</h4>
+	   <div id="box"><h5><img src="ph.png" alt="line" width="15" height="15">FREE SHIPPING</h5>
+	   <h6>On Order Over $100</h6></div><br/>
+		<div id="box">
+		<h5></h5><h5>ORDER ONLINECall</h5>
+	   <h6>Us: (801) 2345 - 6789</h6></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer id="footer">
+
+  <h5>Copyright © 2014 Plazathemes. All Rights Reserved</h5>
+  
+</footer>
+</body>
+</html>
+
+
