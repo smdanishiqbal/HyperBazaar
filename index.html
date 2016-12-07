@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HyperBazaar</title>
+    <link rel="icon" href="favicon.png">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="engine1/style.css"/>
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <script src="script.js"></script>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        #wowslider-container1 {
+            margin-top: 30px;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/lightbox.js"></script>
+    <!--owl slider   -->
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        $(window).load(function()
+        {
+            $('#myModal').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+        });
+        $(document).ready(function () {
+            $("#owl-example").owlCarousel({
+                autoPlay: true
+
+            });
+        })
+
+    </script>
+</head>
+<body ng-controller="mycnt">
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="text-align: center">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <img src="logo.png" width="200" height="150" alt="">
+                <hr>
+                <h4 class="modal-title">Select You City</h4>
+            </div>
+
+            <div class="modal-body">
+              <div class="row" style="text-align: center;">
+                  <a data-dismiss="modal">
+                  <div class="col-md-3"><img src="images/karachi.jpg" width="120" height="120" alt="">
+                  <div class="caption">KARACHI</div>
+                  </div>
+                  </a>
+                  <a data-dismiss="modal">
+                  <div class="col-md-3"><img src="images/islamabad.jpg"  width="120" height="120" alt="">
+                      <div class="caption">ISLAMABAD</div></div></a>
+                  <a data-dismiss="modal">
+                  <div class="col-md-3"><img src="images/lahore.jpg" width="120" height="120" alt="">
+                      <div class="caption">LAHORE</div></div></a>
+                  <a data-dismiss="modal">
+                  <div class="col-md-3"><img src="images/peshawar.jpg" width="120" height="120" alt="">
+                      <div class="caption">PESHAWAR</div></div></a>
+              </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<header >
+
+    <div class="text-right custom-header">
+        <div class=" btn-group">
+            <a href="" data-toggle="dropdown" class="dropdown-toggle"><i class="glyphicon glyphicon-user"></i> My Account <span class="caret"></span></a>
+            <ul class="dropdown-menu noclose">
+                <li><a href="login.html">My Account</a></li>
+                <li><a href="">My Wishlist</a></li>
+                <li><a href="">My Cart</a></li></ul>
+        </div>
+        <div class="btn-group">
+            <a href="" data-toggle="dropdown" class="dropdown-toggle">Language <span class="caret"></span></a>
+            <ul class="dropdown-menu noclose">
+                <li><a href="">English</a></li>
+                <li><a href="">Urdu</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+<nav class="navbar navbar-default shadow ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+                <a class="navbar-brand" href="index.html"><img src="gliphicon2.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right ">
+                <li><a HREF="index.html">HOME</a></li>
+                <li><a href="Women.html">WOMEN</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="footwear.html">FOOTWEAR</a></li>
+                <li><a href="jewellery.html">JEWELLERY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="cart.html" >MY CART</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<br>
+<!---------------------------------Slider----------------->
+
+<!-- Start Slider  section -->
+<div class="slider-container">
+    <!-- Start WOWSlider.com BODY section -->
+    <div id="wowslider-container1">
+        <div class="ws_images"><ul>
+            <li><img src="data1/images/mobile_sale.jpg" alt="MOBILE SALE" title="MOBILE SALE" id="wows1_0"/></li>
+            <li><img src="data1/images/shoes_sale.jpg" alt="SHOES SALE" title="SHOES SALE" id="wows1_1"/></li>
+            <li><img src="data1/images/clothing_sale.png" alt="CLOTHING SALE" title="CLOTHING SALE" id="wows1_2"/></li>
+            <li><img src="data1/images/cosmetic.jpg" alt="jquery carousel" title="COSMETIC" id="wows1_3"/></li>
+            <li><img src="data1/images/homepagebanner.jpg" alt="Home-Page-Banner" title="LOYALTY PROGRAM" id="wows1_4"/></li>
+        </ul></div>
+        <div class="ws_bullets"><div>
+            <a href="#" title="MOBILE SALE"><span><img src="data1/tooltips/mobile_sale.jpg" alt="MOBILE SALE"/>1</span></a>
+            <a href="#" title="SHOES SALE"><span><img src="data1/tooltips/shoes_sale.jpg" alt="SHOES SALE"/>2</span></a>
+            <a href="#" title="CLOTHING SALE"><span><img src="data1/tooltips/clothing_sale.png" alt="CLOTHING SALE"/>3</span></a>
+            <a href="#" title="COSMETIC"><span><img src="data1/tooltips/cosmetic.jpg" alt="COSMETIC"/>4</span></a>
+            <a href="#" title="LOYALTY PROGRAM"><span><img src="data1/tooltips/homepagebanner.jpg" alt="LOYALTY PROGRAM"/>5</span></a>
+        </div></div><div class="ws_script" style="position:absolute;left:-99%"></div>
+        <div class="ws_shadow"></div>
+    </div>
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
+    <!-- End WOWSlider.com BODY section -->
+</div>
+
+<!-- End Slider section -->
+<!---------------------------------------------Categories--------------------------------------------->
+<div class="container-fluid" style="text-align: center">
+    <h3> CATAGORIES</h3>
+</div>
+
+<div class=" row " style="margin-top: 20px;margin-left: 50px;;margin-right: 50px">
+    <div class="col-sm-4 col-xs-12 ">
+        <a href="#">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/cat4.jpg" alt="">
+                <div class="overlay">
+                    <h2>MEN'S SHOES</h2>
+                    <a class="info" href="footwear.html">DETAILS</a>
+                </div>
+            </div>
+
+        </a>
+    </div>
+
+    <div class="col-sm-4 col-xs-12 ">
+        <a href="#">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/cat3.jpg" alt="">
+                <div class="overlay">
+                    <h2>CASUAL CLOTHING</h2>
+                    <a class="info" href="men.html">DETAILS</a>
+                </div>
+            </div>
+
+        </a>
+    </div>
+    <div class="col-sm-4 col-xs-12 ">
+        <a href="#">
+
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/jewlery.jpg" alt="">
+                <div class="overlay">
+                    <h2>JEWELRY</h2>
+                    <a class="info" href="jewellery.html">DETAILS</a>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class=" row " style="margin-top: 20px;margin-left: 50px;;margin-right: 50px">
+    <div class="col-sm-4 col-xs-12 ">
+        <a href="#">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/cosmetic.jpg" alt="">
+                <div class="overlay">
+                    <h2>COSMETICS</h2>
+                    <a class="info" href="Women.html">DETAILS</a>
+                </div>
+            </div>
+
+        </a>
+    </div>
+
+    <div class="col-sm-4 col-xs-12 ">
+        <a href="#">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/watches.jpg" alt="">
+                <div class="overlay">
+                    <h2>WATCHES</h2>
+                    <a class="info" href="watches.html">DETAILS</a>
+                </div>
+            </div>
+
+        </a>
+    </div>
+    <div class="col-sm-4 col-xs-12 ">
+        <a href="#">
+
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/kids.jpg" alt="">
+                <div class="overlay">
+                    <h2>KID'S CLOTHING</h2>
+                    <a class="info" href="kids.html">DETAILS</a>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="container-fluid" style="text-align: center">
+    <h3> FEATURED PRODUCTS</h3>
+</div>
+
+<div id="owl-example" class="owl-carousel">
+
+    <div class="hovereffect" style="width: 250px; height: 180px" >
+        <img class="img-responsive" src="images/shoes/S01-2953%20(2).JPG"  alt="">
+        <div class="overlay">
+            <h2>HIYO CASUAL FOOTWEAR</h2>
+            <a class="info" href="hayoCasualFootware.html">DETAILS</a>
+        </div>
+    </div>
+    <div class="hovereffect" style="width: 250px; height: 180px">
+        <img class="img-responsive" src="images/FOOTWEAR/convas%20shoes/$_57.jpg" alt="">
+        <div class="overlay">
+            <h2>SANTO MEN'S SHOE</h2>
+            <a class="info" href="productdetails.html">DETAILS</a>
+        </div>
+    </div>
+    <div class="hovereffect" style="width: 250px; height: 180px">
+        <img class="img-responsive" src="images/hoddies/C02-0062%20(4).jpg " alt="">
+        <div class="overlay">
+            <h2>CLASO UPPER FOR MEN</h2>
+            <a class="info" href="#">DETAILS</a>
+        </div>
+    </div>
+    <div class="hovereffect" style="width: 250px; height: 180px">
+        <img class="img-responsive" src="images/project%20images/mobiles/Samsung1.jpg" alt="">
+        <div class="overlay">
+            <h2>SAMSUNG NOTE 2</h2>
+            <a class="info" href="#">DETAILS</a>
+        </div>
+    </div>
+    <div class="hovereffect" style="width: 250px; height: 180px">
+        <img class="img-responsive" src="images/shirts/C21-1378%20(2).JPG" alt="">
+        <div class="overlay">
+            <h2>DOCKERS SHITRT</h2>
+            <a class="info" href="shirt1.html">DETAILS</a>
+        </div>
+    </div>
+    <div class="hovereffect" style="width: 250px; height: 180px">
+        <img class="img-responsive" src="images/watches/men/2.casio-gshock-gravity-master-hybrid-gps-mens-watch-gpw10001acr.jpg"  alt="">
+        <div class="overlay">
+            <h2>CASIO ELECTRO WATCH </h2>
+            <a class="info" href="watch17.html">DETAILS</a>
+        </div>
+    </div>
+    <div class="hovereffect" style="width: 250px; height: 180px">
+        <img class="img-responsive" src="images/cosmetic/Olay-Wrinkle.jpg"  alt="">
+        <div class="overlay">
+            <h2>OLAY RANKLE CREAM</h2>
+            <a class="info" href="cusmatic2.html">DETAILS</a>
+        </div>
+    </div>
+    <div class="hovereffect" style="width: 250px; height: 180px">
+        <img class="img-responsive" src="images/cosmetic/s1845338-main-grid.jpg"  alt="">
+        <div class="overlay">
+            <h2>SHE BASE</h2>
+            <a class="info" href="cusmetic6.html">DETAILS</a>
+        </div>
+    </div>
+    <div class="hovereffect" style="width: 250px; height: 180px">
+        <img class="img-responsive" src="images/project%20images/mobiles/Sony-Xperia-ZR-3840x2160-007.jpg"  alt="">
+        <div class="overlay">
+            <h2>SONY XPERIA Y10</h2>
+            <a class="info" href="#">DETAILS</a>
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid">
+    <div class="col-md-12 product-info">
+        <ul id="myTab" class="nav nav-tabs ">
+
+            <li class="active"><a href="#service-one" data-toggle="tab">POPULAR</a></li>
+            <li><a href="#service-two" data-toggle="tab">NEW</a></li>
+            <li><a href="#service-three" data-toggle="tab">SALE</a></li>
+
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <br>
+            <div class="tab-pane fade in active" id="service-one">
+
+                <section class="product-info">
+
+                    <div class="container-fluid product-items">
+
+                            <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                <a href="hayoCasualFootware.html" data-lightbox="lightbox" class="thumbnail" >
+                                    <img src="images/shoes/S01-2953%20(2).JPG">
+                                    <div class="caption "><p>Puma Cricket Shoes for Men</p>
+                                    </div>
+                                    <b class="tag">Rs:7500</b>
+
+                                </a>
+                                    <div class="overlay">
+                                        <h2>Puma Cricket Shoes for Men</h2>
+                                        <a class="info" href="hayoCasualFootware.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+
+                                <div class="col-md-2">
+                                    <div class="hovereffect featured-prod" >
+                                        <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail" >
+                                            <img src="images/hoddies/C01-0046%20(2).jpg">
+                                            <div class="caption"><p>Sniff Casual Jacket for Men</p>
+                                            </div>
+                                            <b class="tag">Rs:7500</b>
+                                        </a>
+                                        <div class="overlay">
+                                            <h2>Sniff Casual Jacket for Men</h2>
+                                            <a class="info" href="coat1.html">DETAILS</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="hovereffect featured-prod" >
+                                        <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                            <img src="images/new/ts1.jpeg">
+                                            <div class="caption "><p>Levis Cornio Shirt </p>
+                                            </div>
+                                            <b class="tag">Rs:7500</b>
+
+                                        </a>
+                                        <div class="overlay">
+                                            <h2>Levis Cornio Shirt</h2>
+                                            <a class="info" href="shirt1.html">DETAILS</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="hovereffect featured-prod" >
+                                        <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                            <img src="images/jeans/hj%20(2).jpg">
+                                            <div class="caption "><p>SandRiver Jeans </p>
+                                                </div>
+                                            <b class="tag">Rs:7500</b>
+
+                                        </a>
+                                        <div class="overlay">
+                                            <h2>SandRiver Jeans</h2>
+                                            <a class="info" href="jeans1.html">DETAILS</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-2">
+                                    <div class="hovereffect featured-prod" >
+                                        <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                            <img src="images/shirts/sw5.jpg">
+                                            <div class="caption "><p>Dockers Upper</p>
+                                            </div>
+                                            <b class="tag">Rs:7500</b>
+
+                                        </a>
+                                        <div class="overlay">
+                                            <h2>Dockers Upper</h2>
+                                            <a class="info" href="upper1.html">DETAILS</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="hovereffect featured-prod" >
+                                        <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                            <img src="images/kruta/k5.jpg">
+                                            <div class="caption "><p>J. Kurta/Shalwaar</p>
+                                            </div>
+                                            <b class="tag">Rs:7500</b>
+
+                                        </a>
+                                        <div class="overlay">
+                                            <h2>J. Kurta/Shalwaar</h2>
+                                            <a class="info" href="kurta1.html">DETAILS</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/shirts/c8.jpg">
+                                        <div class="caption"><p>Casual Coat for Men </p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Casual Coat for Men</h2>
+                                        <a class="info" href="coat1.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/cosmetic/Olay-Wrinkle.jpg">
+                                        <div class="caption"><p>Olay-Wrinkle Cream</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Olay-Wrinkle Cream</h2>
+                                        <a class="info" href="cusmatic1.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/project%20images/Kids/Kids/boy/shirt/images.jpg">
+                                        <div class="caption"><p>Casual Dress for kids</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Casual Dress for kids</h2>
+                                        <a class="info" href="kid3.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/hoddies/C03-0073%20(2).jpg">
+                                        <div class="caption"><p>Fusce Upper</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Fusce Upper</h2>
+                                        <a class="info" href="upper1.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/cosmetic/kit.jpg">
+                                        <div class="caption"><p>Sumira Full MakeUp Kit</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Sumira Full MakeUp Kit</h2>
+                                        <a class="info" href="cusmatic3.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/shoes/S01-2958%20(2).JPG">
+                                        <div class="caption"><p>Nike jogging Footwear </p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Nike jogging Footwear</h2>
+                                        <a class="info" href="shoes5.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/project%20images/Kids/Kids/boy/shirt/51Vgz2OtPHL._AC_UL246_SR190,246_.jpg">
+                                        <div class="caption"><p>Kid's T-Shirt </p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Kid's T-Shirt</h2>
+                                        <a class="info" href="kid2.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/project%20images/Kids/Kids/girl/Nauti-Nati-Multicoloured-Casual-Dress-2582-6906871-1-catalog_m.jpg">
+                                        <div class="caption"><p>Multi-Colored Dress</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Multi-Colored Dress</h2>
+                                        <a class="info" href="kid1.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/21.tissot-seastar-1000-chronograph-black-dial-men_s-watch-t0664171705700.jpg">
+                                        <div class="caption"><p>Tssot latest Watch</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Tssot latest Watch</h2>
+                                        <a class="info" href="watch2.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/girl/3.jpg">
+                                        <div class="caption"><p>RADO Ladies Watch</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>RADO Ladies Watch</h2>
+                                        <a class="info" href="watchg1.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/cosmetic/th%20(26).jpg">
+                                        <div class="caption"><p>Ka~io LipStick</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Ka~io LipStick</h2>
+                                        <a class="info" href="cusmatic2.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/shoes/S01-2963%20(2).JPG">
+                                        <div class="caption"><p>Tero Footwear</p></div>
+                                        <b class="tag">Rs:7500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Tero Footwear</h2>
+                                        <a class="info" href="shoes1.html">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+            <div class="tab-pane fade" id="service-two">
+
+                <section class="product-info">
+
+                    <div class="container-fluid product-items">
+
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  class="thumbnail" >
+                                        <img src="images/shoes/S01-2953%20(5).JPG">
+                                        <div class="caption "><p>Puma Cricket Shoes for Men</p>
+                                        </div>
+                                        <b class="tag">Rs:1500</b>
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Puma Cricket Shoes for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  class="thumbnail" >
+                                        <img src="images/hoddies/C02-0064%20(3).JPG">
+                                        <div class="caption "><p>Sniff Causal jacket for Men </p>
+                                        </div>
+                                        <b class="tag">Rs:1000</b>
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Sniff Causal jacket for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/new/ts5.jpeg">
+                                        <div class="caption "><p>half sleeves t.shirt for Men</p>
+                                        </div>
+                                        <b class="tag">Rs:500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>half sleeves t.shirt for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/jeans/c6.jpg">
+                                        <div class="caption "><p>Levis Jeans Collection</p>
+                                        </div>
+                                        <b class="tag">Rs:700</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Levis Jeans Collection</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/shirts/0.jpg">
+                                        <div class="caption "><p>half sleeves t.shirt for Men</p>
+                                        </div>
+                                        <b class="tag">Rs:700</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>half sleeves t.shirt for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/kruta/k8.jpg">
+                                        <div class="caption "><p>J.kurta for Men</p>
+                                        </div>
+                                        <b class="tag">Rs:1500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>J.kurta for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/shirts/6.jpg">
+                                        <div class="caption"><p>half sleeves t.shirt for Men </p></div>
+                                        <b class="tag">Rs:500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>half sleeves t.shirt for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/cosmetic/s1294826-main-grid.jpg">
+                                        <div class="caption"><p>lotion for wrinkle</p></div>
+                                        <b class="tag">Rs:700</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>lotion for wrinkle</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/project%20images/Kids/Kids/boy/shirt/41Gbj1cQM6L._AC_UL246_SR190,246_.jpg">
+                                        <div class="caption"><p>t.shirt for kids</p></div>
+                                        <b class="tag">Rs:400</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>t.shirt for kids</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/hoddies/C02-0062%20(3).JPG">
+                                        <div class="caption"><p>Fusce Upper</p></div>
+                                        <b class="tag">Rs:1000</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Fusce Upper</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/cosmetic/s1857812-main-grid.jpg">
+                                        <div class="caption"><p>Full MakeUp Kit</p></div>
+                                        <b class="tag">Rs:1800</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Full MakeUp Kit</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/shoes/S01-2956%20(2).JPG">
+                                        <div class="caption"><p>Nike jogging Footwear </p></div>
+                                        <b class="tag">Rs:1200</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Nike jogging Footwear</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/project%20images/Kids/Kids/boy/shirt/51+fiql8TjL._AC_UL246_SR190,246_.jpg">
+                                        <div class="caption"><p>Kid's Shirt </p></div>
+                                        <b class="tag">Rs:500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Kid's Shirt</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/project%20images/Kids/Kids/girl/Bella-Moda-Multicoloured-Frock-1358-9641972-1-catalog_m.jpg">
+                                        <div class="caption"><p>Multi-Colored Dress</p></div>
+                                        <b class="tag">Rs:900</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Multi-Colored Dress</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/1.baume-and-mercier-capeland-silver-dial-chronograph-blue-leather-men_s-watch-10063.jpg">
+                                        <div class="caption"><p>Tssot latest Watch</p></div>
+                                        <b class="tag">Rs:1700</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Tssot latest Watch</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/girl/6.jpg">
+                                        <div class="caption"><p>RADO Ladies Watch</p></div>
+                                        <b class="tag">Rs:900</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>RADO Ladies Watch</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/cosmetic/s1845338-main-grid.jpg">
+                                        <div class="caption"><p>Face powder</p></div>
+                                        <b class="tag">Rs:450</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Face powder</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/shoes/S01-2954%20(2).JPG">
+                                        <div class="caption"><p>Tero Footwear</p></div>
+                                        <b class="tag">Rs:1500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Tero Footwear</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+            <div class="tab-pane fade" id="service-three">
+                <section class="product-info">
+
+                    <div class="container-fluid product-items">
+
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html" class="thumbnail" >
+                                        <img src="images/shoes/S12-0384%20(4).JPG">
+                                        <div class="caption "><p>Puma White Shoes for Men</p>
+                                        </div>
+                                        <b class="tag">Rs:1800</b>
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Puma White & Blue Cricket Shoes for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html" class="thumbnail" >
+                                        <img src="images/hoddies/C02-0065%20(2).jpg">
+                                        <div class="caption "><p>Sniff Causal Jacket for Men</p>
+                                        </div>
+                                        <b class="tag">Rs:900</b>
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Sniff Causal Jacket for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/new/ts8.jpeg">
+                                        <div class="caption "><p>Half sleeves t.shirt for Men</p>
+                                        </div>
+                                        <b class="tag">Rs:500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Half sleeves t.shirt for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/jeans/images.jpg">
+                                        <div class="caption "><p>Levis Jeans Collection</p>
+                                        </div>
+                                        <b class="tag">Rs:700</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Levis Jeans Collection</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/shirts/c0.jpg">
+                                        <div class="caption "><p>Coat for Men</p>
+                                        </div>
+                                        <b class="tag">Rs:2500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Coat for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/jeans/7i.jpg">
+                                        <div class="caption "><p>Cotton Jeans for Men</p>
+                                        </div>
+                                        <b class="tag">Rs:700</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Cotton Jeans for Men</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/jeans/c6.jpg">
+                                        <div class="caption"><p>Levis Jeans Collection </p></div>
+                                        <b class="tag">Rs:700</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Levis Jeans Collection</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/cosmetic/th%20(32).jpg">
+                                        <div class="caption"><p>foundations</p></div>
+                                        <b class="tag">Rs:2500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>foundations</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/project%20images/Kids/Kids/boy/shirt/419vGHu+PLL._AC_UL246_SR190,246_.jpg">
+                                        <div class="caption"><p> kids shirt</p></div>
+                                        <b class="tag">Rs:500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>kids shirt</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/hoddies/C02-0064%20(2).jpg">
+                                        <div class="caption"><p>Fusce Upper</p></div>
+                                        <b class="tag">Rs:1000</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Fusce Upper</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/cosmetic/th%20(12).jpg">
+                                        <div class="caption"><p>maskara & liner</div>
+                                        <b class="tag">Rs:800</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>maskara & liner</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/shoes/S03-0179%20(3).JPG">
+                                        <div class="caption"><p>Nike jogging Footwear </p></div>
+                                        <b class="tag">Rs:1600</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Nike jogging Footwear</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/project%20images/Kids/Kids/boy/shirt/61VHoeAxsFL._AC_UL246_SR190,246_.jpg">
+                                        <div class="caption"><p>Kid's Shirt </p></div>
+                                        <b class="tag">Rs:500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Kid's Shirt</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/project%20images/Kids/Kids/girl/Allen-Solly-Junior-Black-Casual-Dress-4849-3465912-1-catalog_m.jpg">
+                                        <div class="caption"><p>Black Dress</p></div>
+                                        <b class="tag">Rs:1200</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Black Dress</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/men/17.seiko-chronograph-beige-dial-brown-leather-men_s-watch-sndc31_1.jpg">
+                                        <div class="caption"><p>Tssot latest Watch</p></div>
+                                        <b class="tag">Rs:1200</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Tssot latest Watch</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/watches/girl/18.jpg">
+                                        <div class="caption"><p>RADO Ladies Watch</p></div>
+                                        <b class="tag">Rs:1000</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>RADO Ladies Watch</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/cosmetic/th%20(8).jpg">
+                                        <div class="caption"><p>Facial base</p></div>
+                                        <b class="tag">Rs:800</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Facial base</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="hovereffect featured-prod" >
+                                    <a href="productdetails.html"  data-lightbox="lightbox" class="thumbnail">
+                                        <img src="images/shoes/S12-0385%20(5).JPG">
+                                        <div class="caption"><p>Tero Footwear</p></div>
+                                        <b class="tag">Rs:1500</b>
+
+                                    </a>
+                                    <div class="overlay">
+                                        <h2>Tero Footwear</h2>
+                                        <a class="info" href="#">DETAILS</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+<!--footer start from here-->
+<div id="newsletter-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 clearfix">
+                <h3>Sign up to receive the latest news</h3>
+                <form id="register-newsletter">
+                    <input type="email" id="inputEmail" name="newsletter" required="" placeholder="Enter your email address">
+                    <input  type="submit" onclick="abc()"  class="btn btn-custom-3" value="SIGN UP">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/alert.js"></script>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footerleft ">
+                <div class="logofooter"> HyperBazaar</div>
+                <p>HyperBazaar is a departmental store selling cosmetics, ladies fabrics,
+                    artificial jewellery, shoes, ladies bags, watches,men shirt,t.shirt,jeans,coat,kids clothes
+                    and more at wholesale rates in a comfortable retail environment.</p>
+                <p><i class="fa fa-map-pin"></i> 210,Karachi Pakistan</p>
+                <p><i class="fa fa-phone"></i> Phone (Pakistan) : +92 9999 878 398</p>
+                <p><i class="fa fa-envelope"></i> E-mail : info@HyperBazaar.com</p>
+
+            </div>
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">GENERAL LINKS</h6>
+                <ul class="footer-ul">
+                    <li><a href="aboutus.html"> About us</a></li>
+                    <li><a href="privacy.html"> Privacy Policy</a></li>
+                    <li><a href="term&conditions.html"> Terms & Conditions</a></li>
+                    <li><a href="advanced%20search.html"> Catalog Advanced Search</a></li>
+                    <li><a href="login.html"> Login</a></li>
+                    <li><a href="login.html"> My Account</a></li>
+                    <li><a href="contact%20us.html"> Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">LATEST POST</h6>
+                <div class="post">
+                    <p>Black Friday Sale <span>September 25,2016</span></p>
+                    <p>Winter Sale<span>December 1,2016</span></p>
+                    <p>Clearance Sale<span>August 3,2016</span></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <div><a href="https://www.facebook.com/Hyper-bazaar-713198875522753/"><img  src="images/facebook.png" alt=""></a>
+                    <a href="https://plus.google.com/"> <img src="images/g.png" alt=""></a>
+                    <a href="https://twitter.com/login?lang=en"> <img src="images/twitter-logo-button.png" alt=""></a>
+                    <a href="index.html"><img src="footor%20logo.png"   alt=""></a></div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright ">
+    <div class="container">
+        <div class="col-md-6">
+            <p>© 2016 - All Rights with HyperBazaar</p>
+        </div>
+        <div class="col-md-6">
+            <ul class="bottom_ul">
+                <li><a href="index.html">HyperBazaar.com</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="contact%20us.html">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
